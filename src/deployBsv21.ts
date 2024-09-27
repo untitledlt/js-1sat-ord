@@ -165,7 +165,7 @@ export const deployBsv21Token = async (
 	await tx.fee(modelOrFee);
 
 	// Sign the transaction
-	await tx.sign();
+	// await tx.sign();
 
 	// check for change
 	const payChangeOutIdx = tx.outputs.findIndex((o) => o.change);
